@@ -3,3 +3,4 @@ distConsole
 *node_modules
 coverage
 *.log
+allure-repor

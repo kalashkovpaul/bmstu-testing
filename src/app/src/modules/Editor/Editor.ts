@@ -1,8 +1,8 @@
-import WorkDelivery from "../../delivery/WorkDelivery";
+import WorkDelivery from "../../delivery/WorkDelivery/WorkDelivery";
 import { events } from "../../configs/events.config";
 import { statuses } from "../../consts";
-import HeroDelivery from "../../delivery/HeroDelivery";
-import SkillDelivery from "../../delivery/SkillDelivery";
+import HeroDelivery from "../../delivery/HeroDelivery/HeroDelivery";
+import SkillDelivery from "../../delivery/SkillDelivery/SkillDelivery";
 import { DeliveryLevel, getSkillProps, getWorkData, getWorkProps, hero, saveSkillData, } from "../../types";
 import BaseComponent from "../BaseComponent";
 import HeroValidator from "../HeroValidator/HeroValidator";

@@ -1,0 +1,4 @@
+{
+    "jest.jestCommandLine": "npx jest --forceExit",
+    "jest.rootPath": "./src/app"
+}

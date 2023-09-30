@@ -1,4 +1,4 @@
 export const logConfig = {
-    infoPath: "./log/app.log",
-    errorPath: "./log/error.log",
+    infoPath: "app.log",
+    errorPath: "error.log",
 }

@@ -1,4 +1,4 @@
-import WorkDelivery from "./delivery/WorkDelivery";
+import WorkDelivery from "./delivery/WorkDelivery/WorkDelivery";
 
 export type callback = (...args: any[]) => void;
 

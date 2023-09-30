@@ -48,7 +48,11 @@ export class API extends BaseComponent {
             }
         );
         console.log("SERVER listening on ", apiConfig.port);
-        await this.api.listen(apiConfig.port, '0.0.0.0');
+        const options = {
+            port: apiConfig.port,
+            host: '0.0.0.0',
+        };
+        await this.api.listen(options);
     }
 
     getUser = async (request: any, reply: any) => {

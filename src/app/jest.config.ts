@@ -2,7 +2,7 @@ import { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
     preset: "ts-jest",
-    testEnvironment: "node",
+    // testEnvironment: "node",
     verbose: true,
     automock: true,
     collectCoverage: true,
@@ -38,7 +38,11 @@ const config: Config.InitialOptions = {
             },
         ],
     },
-    modulePathIgnorePatterns: ["<rootDir>/dist/"]
+    modulePathIgnorePatterns: ["<rootDir>/dist/"],
+    testEnvironment: "allure-jest/node",
+    testEnvironmentOptions: {
+        resultsDir: "./allure-results"
+    }
 }
 
 export default config;

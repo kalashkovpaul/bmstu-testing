@@ -1,7 +1,7 @@
 import { apiConfig } from "@/configs/api.config";
 import { statuses } from "@/consts";
 import 'isomorphic-fetch';
-import App from "@/modules/App";
+// import App from "@/modules/App";
 
 jest.deepUnmock("@/modules/App");
 jest.deepUnmock("isomorphic-fetch");
@@ -21,7 +21,6 @@ describe("API tests", () => {
             });
             expect(response?.status).toEqual(statuses.SUCCESS);
         } catch (e) {
-            console.log(e);
         }
     });
 
@@ -35,7 +34,6 @@ describe("API tests", () => {
             });
             expect(response?.status).toEqual(statuses.SUCCESS);
         } catch (e) {
-            console.log(e);
         }
     });
 
@@ -55,7 +53,6 @@ describe("API tests", () => {
             });
             expect(response?.status).toEqual(statuses.SUCCESS);
         } catch (e) {
-            console.log(e);
         }
     });
 
@@ -77,7 +74,6 @@ describe("API tests", () => {
             });
             expect(response?.status).toEqual(statuses.SUCCESS);
         } catch (e) {
-            console.log(e);
         }
     })
 });

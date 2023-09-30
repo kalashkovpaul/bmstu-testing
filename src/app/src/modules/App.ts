@@ -1,13 +1,13 @@
-import HeroDelivery from "../delivery/HeroDelivery";
+import HeroDelivery from "../delivery/HeroDelivery/HeroDelivery";
 import BaseComponent from "./BaseComponent";
 import Administrator from "./Administrator/Administrator";
 import HeroRepository from "../repository/HeroRepository/HeroRepository";
 import { events } from "../configs/events.config";
 import { API, api } from "./api";
 import Editor from "./Editor/Editor";
-import SkillDelivery from "../delivery/SkillDelivery";
+import SkillDelivery from "../delivery/SkillDelivery/SkillDelivery";
 import SkillRepository from "../repository/SkillRepository/SkillRepository";
-import WorkDelivery from "../delivery/WorkDelivery";
+import WorkDelivery from "../delivery/WorkDelivery/WorkDelivery";
 import WorkRepository from "../repository/WorkRepository/WorkRepository";
 
 export default class App extends BaseComponent {

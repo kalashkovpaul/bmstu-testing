@@ -1,5 +1,5 @@
 import { events } from "../../configs/events.config";
-import HeroDelivery from "../../delivery/HeroDelivery";
+import HeroDelivery from "../../delivery/HeroDelivery/HeroDelivery";
 import { eventData } from "../../types";
 import BaseComponent from "../BaseComponent";
 import IAdministrator from "./IAdministrator";
@@ -22,17 +22,17 @@ export default class Administrator extends BaseComponent implements IAdministrat
     onEvent = (event: eventData) => {
         if (event.actionCode === '9') {
             this.currentActionChain = "";
-            console.log("CLEAR");
+            // console.log("CLEAR");
         } else {
             this.currentActionChain += event.actionCode;
-            console.log("CODE: ", this.currentActionChain);
+            // console.log("CODE: ", this.currentActionChain);
         }
     }
 
     checkAction() {
         if (this.currentActionChain === this.actionChain) {
             this.enableOwnership();
-            console.log("ENABLE");
+            // console.log("ENABLE");
         } else {
             this.bus.emit(events.noRights);
         }
