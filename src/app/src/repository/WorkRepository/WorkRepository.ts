@@ -69,7 +69,7 @@ export default new class WorkRepository implements IWorkRepository {
             status: statuses.SERVER_ERROR,
         }
         try {
-            db.one({
+            db.none({
                 text: `DELETE FROM works WHERE (works.title=$1)`,
                 values: [workName],
             });

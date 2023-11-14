@@ -38,7 +38,7 @@ const config: Config.InitialOptions = {
             },
         ],
     },
-    modulePathIgnorePatterns: ["<rootDir>/dist/"],
+    modulePathIgnorePatterns: ["<rootDir>/dist/", "integration-tests", "e2e-tests"],
     testEnvironment: "allure-jest/node",
     testEnvironmentOptions: {
         resultsDir: "./allure-results"

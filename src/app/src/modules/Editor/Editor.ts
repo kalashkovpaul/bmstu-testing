@@ -56,7 +56,7 @@ export default class Editor extends BaseComponent implements IEditor {
     }
 
     async saveSkill(skillData: saveSkillData) {
-        const {skill} = skillData
+        const {skill, newSkillName} = skillData
         if (!this.isOwner) {
             this.bus.emit(events.skillSaveResolved, statuses.FORBIDDEN);
             return;
@@ -79,9 +79,13 @@ export default class Editor extends BaseComponent implements IEditor {
                 skill.name,
                 skill.endDate
             )).status);
-            results.push((await this.skillDelivery.setDescription(
+            results.push((await this.skillDelivery.setLink(
                 skill.name,
-                skill.description
+                skill.link
+            )).status);
+            results.push((await this.skillDelivery.setSkillName(
+                skill.name,
+                newSkillName
             )).status);
             results.push(skill.image ? (await this.skillDelivery.setImage(
                 skill.name,

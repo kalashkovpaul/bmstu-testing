@@ -1,4 +1,4 @@
 {
-    "jest.jestCommandLine": "npx jest --forceExit",
+    "jest.jestCommandLine": "npx jest --forceExit --runInBand --verbose --config=./jest.e2e.config.ts ./src/e2e-tests",
     "jest.rootPath": "./src/app"
 }

@@ -1,0 +1,116 @@
+[2023-11-14T15:10:56.220Z] info: GET /api/user
+[2023-11-14T15:10:56.276Z] info: [object Object]
+[2023-11-14T15:10:56.277Z] info: GET /api/user, return 200
+[2023-11-14T15:16:36.411Z] error: No data returned from the query.
+[2023-11-14T15:19:26.447Z] error: No data returned from the query.
+[2023-11-14T15:20:55.289Z] error: No data returned from the query.
+[2023-11-14T15:22:47.822Z] error: abracadabra
+[2023-11-14T15:22:47.836Z] error: abracadabra
+[2023-11-14T15:22:48.006Z] error: abracadabra
+[2023-11-14T15:22:48.010Z] error: abracadabra
+[2023-11-14T15:22:48.017Z] error: abracadabra
+[2023-11-14T15:22:48.052Z] error: abracadabra
+[2023-11-14T15:22:48.123Z] error: abracadabra
+[2023-11-14T15:22:48.130Z] error: abracadabra
+[2023-11-14T15:22:48.424Z] error: abracadabra
+[2023-11-14T15:22:48.436Z] error: abracadabra
+[2023-11-14T15:22:48.647Z] error: abracadabra
+[2023-11-14T15:22:48.658Z] error: abracadabra
+[2023-11-14T15:22:48.668Z] error: abracadabra
+[2023-11-14T15:22:48.688Z] error: abracadabra
+[2023-11-14T15:22:48.693Z] error: abracadabra
+[2023-11-14T15:22:48.698Z] error: abracadabra
+[2023-11-14T15:22:48.462Z] error: abracadabra
+[2023-11-14T15:22:48.709Z] error: abracadabra
+[2023-11-14T15:22:48.723Z] error: abracadabra
+[2023-11-14T15:22:48.738Z] error: abracadabra
+[2023-11-14T15:22:48.754Z] error: abracadabra
+[2023-11-14T15:22:48.780Z] error: abracadabra
+[2023-11-14T15:22:48.829Z] error: abracadabra
+[2023-11-14T15:22:48.882Z] error: abracadabra
+[2023-11-14T15:22:48.886Z] error: abracadabra
+[2023-11-14T15:22:53.403Z] error: abracadabra
+[2023-11-14T15:22:53.409Z] error: abracadabra
+[2023-11-14T15:23:37.696Z] error: abracadabra
+[2023-11-14T15:23:37.855Z] error: abracadabra
+[2023-11-14T15:23:37.888Z] error: abracadabra
+[2023-11-14T15:23:37.893Z] error: abracadabra
+[2023-11-14T15:23:37.898Z] error: abracadabra
+[2023-11-14T15:23:37.904Z] error: abracadabra
+[2023-11-14T15:23:37.978Z] error: abracadabra
+[2023-11-14T15:23:37.994Z] error: abracadabra
+[2023-11-14T15:23:38.002Z] error: abracadabra
+[2023-11-14T15:23:38.012Z] error: abracadabra
+[2023-11-14T15:23:38.019Z] error: abracadabra
+[2023-11-14T15:23:38.948Z] error: abracadabra
+[2023-11-14T15:23:38.996Z] error: abracadabra
+[2023-11-14T15:23:39.006Z] error: abracadabra
+[2023-11-14T15:23:39.020Z] error: abracadabra
+[2023-11-14T15:23:39.029Z] error: abracadabra
+[2023-11-14T15:23:39.047Z] error: abracadabra
+[2023-11-14T15:23:39.223Z] error: abracadabra
+[2023-11-14T15:23:39.229Z] error: abracadabra
+[2023-11-14T15:23:39.358Z] error: abracadabra
+[2023-11-14T15:23:39.404Z] error: abracadabra
+[2023-11-14T15:23:39.453Z] error: abracadabra
+[2023-11-14T15:23:39.475Z] error: abracadabra
+[2023-11-14T15:23:39.497Z] error: abracadabra
+[2023-11-14T15:23:39.527Z] error: abracadabra
+[2023-11-14T15:23:39.543Z] error: abracadabra
+[2023-11-14T15:23:39.559Z] error: abracadabra
+[2023-11-14T15:25:56.960Z] error: abracadabra
+[2023-11-14T15:25:56.969Z] error: abracadabra
+[2023-11-14T15:25:56.974Z] error: abracadabra
+[2023-11-14T15:25:57.067Z] error: abracadabra
+[2023-11-14T15:25:57.139Z] error: abracadabra
+[2023-11-14T15:25:57.144Z] error: abracadabra
+[2023-11-14T15:25:57.149Z] error: abracadabra
+[2023-11-14T15:25:57.177Z] error: abracadabra
+[2023-11-14T15:25:56.838Z] error: abracadabra
+[2023-11-14T15:25:56.906Z] error: abracadabra
+[2023-11-14T15:25:56.924Z] error: abracadabra
+[2023-11-14T15:25:56.928Z] error: abracadabra
+[2023-11-14T15:25:56.933Z] error: abracadabra
+[2023-11-14T15:25:57.041Z] error: abracadabra
+[2023-11-14T15:25:57.046Z] error: abracadabra
+[2023-11-14T15:25:57.051Z] error: abracadabra
+[2023-11-14T15:25:57.069Z] error: abracadabra
+[2023-11-14T15:25:57.197Z] error: abracadabra
+[2023-11-14T15:25:57.201Z] error: abracadabra
+[2023-11-14T15:25:57.110Z] error: abracadabra
+[2023-11-14T15:25:57.154Z] error: abracadabra
+[2023-11-14T15:25:57.158Z] error: abracadabra
+[2023-11-14T15:25:57.172Z] error: abracadabra
+[2023-11-14T15:25:57.191Z] error: abracadabra
+[2023-11-14T15:25:57.226Z] error: abracadabra
+[2023-11-14T15:25:57.231Z] error: abracadabra
+[2023-11-14T15:25:57.278Z] error: abracadabra
+[2023-11-14T15:26:35.853Z] error: No data returned from the query.
+[2023-11-14T15:32:58.469Z] info: GET /api/skills
+[2023-11-14T15:32:58.488Z] info: GET /api/skills, return 200
+[2023-11-14T15:33:22.103Z] info: PUT /api/skill
+[2023-11-14T15:33:22.152Z] info: PUT /api/skill, return 200
+[2023-11-14T15:34:37.115Z] info: POST /api/skill/create
+[2023-11-14T15:34:37.116Z] info: POST /api/skill/create, return 403
+[2023-11-14T15:35:04.865Z] info: PUT /api/event
+[2023-11-14T15:35:04.866Z] info: PUT /api/event, return 200
+[2023-11-14T15:35:07.781Z] info: GET /api/check
+[2023-11-14T15:35:07.782Z] info: GET /api/check, return 200
+[2023-11-14T15:35:20.666Z] info: GET /api/check
+[2023-11-14T15:35:20.666Z] info: GET /api/check, return 200
+[2023-11-14T15:36:14.655Z] info: PUT /api/event
+[2023-11-14T15:36:14.655Z] info: PUT /api/event, return 200
+[2023-11-14T15:36:16.519Z] info: GET /api/check
+[2023-11-14T15:36:16.519Z] info: GET /api/check, return 200
+[2023-11-14T15:36:58.175Z] info: PUT /api/event
+[2023-11-14T15:36:58.177Z] info: PUT /api/event, return 200
+[2023-11-14T15:36:59.832Z] info: GET /api/check
+[2023-11-14T15:36:59.833Z] info: GET /api/check, return 200
+[2023-11-14T15:37:15.348Z] info: POST /api/skill/create
+[2023-11-14T15:37:15.382Z] info: POST /api/skill/create, return 200
+[2023-11-14T15:37:28.112Z] info: GET /api/skills
+[2023-11-14T15:37:28.124Z] info: GET /api/skills, return 200
+[2023-11-14T15:37:49.523Z] info: POST /api/skill/delete
+[2023-11-14T15:37:49.525Z] info: POST /api/skill/delete, return 200
+[2023-11-14T15:38:40.866Z] info: POST /api/skill/save
+[2023-11-14T15:38:40.889Z] info: POST /api/skill/save, return 200

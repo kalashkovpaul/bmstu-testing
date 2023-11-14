@@ -1,0 +1,12 @@
+[2023-11-14T15:32:58.469Z] info: GET /api/skills
+[2023-11-14T15:32:58.488Z] info: GET /api/skills, return 200
+[2023-11-14T15:33:22.103Z] info: PUT /api/skill
+[2023-11-14T15:33:22.152Z] info: PUT /api/skill, return 200
+[2023-11-14T15:37:15.348Z] info: POST /api/skill/create
+[2023-11-14T15:37:15.382Z] info: POST /api/skill/create, return 200
+[2023-11-14T15:37:28.112Z] info: GET /api/skills
+[2023-11-14T15:37:28.124Z] info: GET /api/skills, return 200
+[2023-11-14T15:37:49.523Z] info: POST /api/skill/delete
+[2023-11-14T15:37:49.525Z] info: POST /api/skill/delete, return 200
+[2023-11-14T15:38:40.866Z] info: POST /api/skill/save
+[2023-11-14T15:38:40.889Z] info: POST /api/skill/save, return 200

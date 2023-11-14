@@ -76,7 +76,7 @@ export default new class SkillRepository implements ISkillRepository {
             status: statuses.SERVER_ERROR,
         }
         try {
-            db.one({
+            db.none({
                 text: `DELETE FROM skills WHERE (skills.name=$1)`,
                 values: [skillName],
             });

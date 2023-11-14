@@ -153,8 +153,8 @@ const heroRepository = {
 // лондонские тесты
 describe('HeroDelivery test', () => {
     const heroDelivery = new HeroDelivery(heroRepository as IHeroRepository);
-    jest.spyOn(logger, 'error').mockImplementation((a: any) => {});
-    jest.spyOn(logger, 'info').mockImplementation((a: any) => {});
+    // jest.spyOn(logger, 'error').mockImplementation((a: any) => {});
+    // jest.spyOn(logger, 'info').mockImplementation((a: any) => {});
 
     test('getActionChain positive', async () => {
         isNegative = false;
