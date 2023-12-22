@@ -1,0 +1,67 @@
+
+image: kalashkov/test
+
+services:
+  - name: docker:dind
+
+before_script:
+  - docker info
+
+stages:
+  - test
+
+# backend-build-job:
+#   stage: build
+#   when: always
+#   script:
+#     - cd src/
+#     - go mod tidy
+#     - go build cmd/server/main.go
+#   artifacts:
+#     paths:
+#       - main
+#     expire_in: 1 hour
+
+.setup_test_env:
+  before_script:
+    - cd src/app/
+    - rm -rf ./allure-report/*
+    - mkdir -p ./allure-report
+    - export ALLURE_OUTPUT_PATH=./allure-report
+
+unit:
+  stage: test
+  when: always
+  extends: .setup_test_env
+  script:
+    - docker run --rm -i --net="host" --name test test:test npm run test-unit
+  artifacts:
+    paths:
+      - allure-report
+    expire_in: 1 hour
+
+integration:
+  stage: test
+  when: always
+  extends: .setup_test_env
+  script:
+    - docker run --rm -i --net="host" --name test test:test npm run test-integration
+  artifacts:
+    paths:
+      - test-reports
+    expire_in: 1 hour
+  needs:
+    - unit
+
+e2e:
+  stage: test
+  when: always
+  extends: .setup_test_env
+  script:
+    - docker run --rm -i --net="host" --name test test:test npm run test-e2e
+  artifacts:
+    paths:
+      - test-reports
+    expire_in: 1 hour
+  needs:
+    - integration
