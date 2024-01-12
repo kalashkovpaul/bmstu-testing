@@ -132,7 +132,7 @@ export default class SkillDelivery {
         }
     }
 
-    async setLink(skillName: string, newLink: string) {
+    async setLink(skillName: string, newLink: string): Promise<setSkillLinkData> {
         try {
             const response = await this.skillRepository.setSkillLink(skillName,
                 newLink);
@@ -141,7 +141,7 @@ export default class SkillDelivery {
             logger.error(e);
             return {
                 status: statuses.SERVER_ERROR,
-            }
+            };
         }
     }
 

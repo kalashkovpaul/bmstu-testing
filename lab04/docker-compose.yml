@@ -1,0 +1,70 @@
+version: '3.3'
+
+volumes:
+  postgres:
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-test
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PG_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      PGPORT: 5431
+    ports:
+      - 5431:5431
+    networks:
+      - my_persistent_network
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  selenium:
+    image: selenium/standalone-chrome
+    container_name: lab04-selenium
+    ports:
+      - 4444:4444
+    volumes:
+      - /dev/shm:/dev/shm
+      - "/Users/p.kalashkov/Library/Application Support/Google/Chrome:/chrome"
+    networks:
+      - my_persistent_network
+
+
+  app-to-test:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    # stdin_open: truej
+    container_name: app-to-test
+    ports:
+      - 3000:3000
+    image: kalashkovpaul/lab04:latest
+    command: sh -c "yarn dev"
+    networks:
+      - my_persistent_network
+    depends_on:
+      - postgres
+      - selenium
+
+  lab04:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    stdin_open: true
+    container_name: test
+    image: kalashkovpaul/lab04:latest
+    command: sh -c "yarn prisma db push && npm run generate && npm run test"
+    volumes:
+      - /Users/p.kalashkov/Desktop/seventhTerm/test/lab04/artifacts:/artifacts
+      - "/Users/p.kalashkov/Library/Application Support/Google/Chrome:/chrome"
+      - /Users/p.kalashkov/Desktop/seventhTerm/test/lab04/features:/app/features
+    networks:
+      - my_persistent_network
+    depends_on:
+      - postgres
+      - selenium
+      - app-to-test
+
+networks:
+  my_persistent_network:

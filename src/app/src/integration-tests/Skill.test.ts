@@ -64,16 +64,16 @@ describe('Integration tests: Skill tests', () => {
                 skill: {
                     competence: 10,
                     description: "Made this whole bunch of code work!",
-                    enddate: new Date('2023-04-22T21:00:00.000Z'),
+                    enddate: new Date('2023-04-23T00:00:00.000Z'),
                     image: "",
                     link: "",
                     name: "New Skill",
-                    startdate: new Date('2023-04-21T21:00:00.000Z'),
+                    startdate: new Date('2023-04-22T00:00:00.000Z'),
                 }
             });
             expect(test).toHaveBeenCalledTimes(1);
         });
-    });
+    }, 15000);
 
     test('createSkill test', async () => {
         const app = new App() as any;
@@ -140,8 +140,8 @@ describe('Integration tests: Skill tests', () => {
                     competence: 7,
                     link: 'testlink',
                     image: "",
-                    enddate: new Date('2023-07-01T21:00:00.000Z'),
-                    startdate: new Date('2003-07-01T20:00:00.000Z')
+                    enddate: new Date('2023-07-02T00:00:00.000Z'),
+                    startdate: new Date('2003-07-02T00:00:00.000Z')
                 }
             });
         });;

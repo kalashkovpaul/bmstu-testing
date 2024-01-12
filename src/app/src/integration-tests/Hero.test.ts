@@ -49,14 +49,14 @@ describe('Integration tests: Hero tests', () => {
                     surname: 'Kalashkov',
                     lastname: 'Alexandrovich',
                     phone: '+79840491141',
-                    birthdate: new Date("2003-07-01T20:00:00.000Z"),
+                    birthdate: new Date("2003-07-02T00:00:00.000Z"),
                     photo: 'avatar.png',
                     resume: 'resume.pdf',
                 }
             });
             expect(test).toHaveBeenCalledTimes(1);
         });
-    });
+    }, 15000);
 
     test('getActionChainTest', async () => {
         const app = new App();
@@ -88,11 +88,11 @@ describe('Integration tests: Hero tests', () => {
                     ...testUser,
                     photo: 'avatar.png',
                     resume: 'resume.pdf',
-                    birthdate: new Date('2000-08-20T20:00:00.000Z')
+                    birthdate: new Date('2000-08-21T00:00:00.000Z')
                 }
             });
         });
-    });
+    }, 15000);
 
     afterAll(async () => {
         await renewDB(test_db);

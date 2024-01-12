@@ -4,3 +4,4 @@ distConsole
 coverage
 *.log
 allure-repor
+.DS_Store

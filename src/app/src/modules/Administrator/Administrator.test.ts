@@ -1,3 +1,29 @@
+const mockLogger = {
+    debug: jest.fn(),
+    log: jest.fn()
+};
+
+jest.mock("winston", () => ({
+    format: {
+      colorize: jest.fn(),
+      combine: jest.fn(),
+      label: jest.fn(),
+      timestamp: jest.fn(),
+      printf: jest.fn()
+    },
+    createLogger: jest.fn().mockReturnValue(mockLogger),
+    transports: {
+      Console: jest.fn(),
+      File: jest.fn(),
+      DailyRotateFile: jest.fn(),
+    }
+}));
+
+
+jest.mock("winston-daily-rotate-file", () => ({
+
+}));
+
 import Editor from "@/modules/Editor/Editor";
 import { eventBus } from "@/modules/Bus/EventBus";
 import SkillDelivery from "@/delivery/SkillDelivery/SkillDelivery";
